@@ -17,8 +17,8 @@
                 <input type="submit" id= "submit" value="submit">
             </div>
             <div class= "right-box">
-                <h1>Title:<br><span id="display-title"></span></h1>
-                <p>Message:<br><span id="display-message"></span></p>
+                <h1><span id="display-title"></span></h1>
+                <p><span id="display-message"></span></p>
             </div>
         </div>
     </body>
@@ -34,7 +34,6 @@
         const displayTitleColor = document.getElementById('display-titlecolor')
         const displayMessageColor = document.getElementById('display-messagecolor')
 
-
         inputTitle.addEventListener('input', function(e){
 
             const newtitle = inputTitle.value
@@ -48,12 +47,9 @@
 
             const newmessage = inputMessage.value
             const messagecolor = inputTitleColor.value
-            // background-color -> el.style.backgroundColor
 
             displayMessage.innerHTML = newmessage
             displayMessage.style.color = messagecolor
         }) 
-
-
     </script>
 </html>
