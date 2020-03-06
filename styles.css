@@ -1,6 +1,6 @@
 .custom-message {
-    padding-top: 200px;
-    margin: 200px;
+    padding-top: 100px;
+    margin: 550px;
     width: 800px;
     height: 800px;
     border: solid;
@@ -20,9 +20,9 @@
     position: relative;
     font-size: 30px;
     left: 900px;
-    top: -510px;
+    top: -410px;
     width: 800px;
-    height: 1000px;
+    height: 900px;
 }
 
 .right-box h1{
