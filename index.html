@@ -10,20 +10,36 @@
     <body>
         <div class= "custom-message">
             <div class= "leftbox">
-                <input type="text" id="topbox" name="topbox">
-                <input type="text" id="bottombox" name="bottombox">
+                <input type="text" id="input-title">
+                <input type="text" id="input-message">
                 <input type="submit" id= "submit" value="submit">
             </div>
             <div class= "right-box">
-                <p>output:</p>
-                <p>output:</p>
+                <h1>Title:<span id="display-title"></span></h1>
+                <p>Message:<span id="display-message"></span></p>
             </div>
         </div>
     </body>
 
     <!-- Javascript -->
     <script>
+        const inputTitle = document.getElementById('input-title')
+        const inputMessage= document.getElementById('input-message')
+        const displayTitle = document.getElementById('display-title')
+        const displayMessage = document.getElementById('display-message')
 
-    
+        inputTitle.addEventListener('input', function(e){
+
+        })
+
+        inputMessage.addEventListener('input', function(e){
+
+            const newmessage = (inputMessage.value)
+            const newtitle = (inputTitle.value)
+
+            displayTitle.innerHTML = newtitle
+            displayMessage.innerHTML = newmessage
+
+        }) 
     </script>
 </html>
