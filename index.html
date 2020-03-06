@@ -31,8 +31,20 @@
         const displayMessage = document.getElementById('display-message')
         const inputTitleColor = document.getElementById('choose-titlecolor')
         const inputMessageColor = document.getElementById('choose-messagecolor')
-        const displayTitleColor = document.getElementById('display-titlecolor')
-        const displayMessageColor = document.getElementById('display-messagecolor')
+
+        inputTitleColor.addEventListener('input', function(e){
+            const titlecolor = inputTitleColor.value
+
+            displayTitle.style.color = titlecolor
+        })
+
+
+        inputMessageColor.addEventListener('input', function(e){
+            const messagecolor = inputMessageColor.value
+
+            displayMessage.style.color = messagecolor
+        })
+
 
         inputTitle.addEventListener('input', function(e){
 
